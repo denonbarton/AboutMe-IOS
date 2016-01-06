@@ -13,6 +13,12 @@
 		697CF63C1C3D9AC100EC4BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697CF63B1C3D9AC100EC4BF6 /* Assets.xcassets */; };
 		697CF63F1C3D9AC100EC4BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697CF63D1C3D9AC100EC4BF6 /* LaunchScreen.storyboard */; };
 		697CF64A1C3D9AC100EC4BF6 /* AboutMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CF6491C3D9AC100EC4BF6 /* AboutMeTests.swift */; };
+		697CF6581C3D9BA200EC4BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697CF6561C3D9BA200EC4BF6 /* Main.storyboard */; };
+		697CF65C1C3D9EF200EC4BF6 /* AirsoftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CF65B1C3D9EF200EC4BF6 /* AirsoftViewController.swift */; };
+		697CF65E1C3D9F3A00EC4BF6 /* MartialArtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CF65D1C3D9F3A00EC4BF6 /* MartialArtsViewController.swift */; };
+		697CF6611C3D9F9B00EC4BF6 /* SwimmingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CF6601C3D9F9B00EC4BF6 /* SwimmingViewController.swift */; };
+		697CF6681C3DA80E00EC4BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697CF6661C3DA80E00EC4BF6 /* LaunchScreen.storyboard */; };
+		697CF66A1C3DB50F00EC4BF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CF6691C3DB50F00EC4BF6 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		697CF6451C3D9AC100EC4BF6 /* AboutMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboutMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		697CF6491C3D9AC100EC4BF6 /* AboutMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeTests.swift; sourceTree = "<group>"; };
 		697CF64B1C3D9AC100EC4BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697CF6571C3D9BA200EC4BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AboutMe/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		697CF65B1C3D9EF200EC4BF6 /* AirsoftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirsoftViewController.swift; sourceTree = "<group>"; };
+		697CF65D1C3D9F3A00EC4BF6 /* MartialArtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MartialArtsViewController.swift; sourceTree = "<group>"; };
+		697CF6601C3D9F9B00EC4BF6 /* SwimmingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwimmingViewController.swift; sourceTree = "<group>"; };
+		697CF6671C3DA80E00EC4BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AboutMe/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		697CF6691C3DB50F00EC4BF6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AboutMe/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,9 @@
 		697CF6281C3D9AC100EC4BF6 = {
 			isa = PBXGroup;
 			children = (
+				697CF6691C3DB50F00EC4BF6 /* ViewController.swift */,
+				697CF6661C3DA80E00EC4BF6 /* LaunchScreen.storyboard */,
+				697CF6561C3D9BA200EC4BF6 /* Main.storyboard */,
 				697CF6331C3D9AC100EC4BF6 /* AboutMe */,
 				697CF6481C3D9AC100EC4BF6 /* AboutMeTests */,
 				697CF6321C3D9AC100EC4BF6 /* Products */,
@@ -77,10 +92,8 @@
 		697CF6331C3D9AC100EC4BF6 /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				697CF6341C3D9AC100EC4BF6 /* AppDelegate.swift */,
-				697CF6361C3D9AC100EC4BF6 /* ViewController.swift */,
-				697CF6381C3D9AC100EC4BF6 /* Main.storyboard */,
-				697CF63B1C3D9AC100EC4BF6 /* Assets.xcassets */,
+				697CF6551C3D9B6000EC4BF6 /* View */,
+				697CF6541C3D9B4000EC4BF6 /* Controller */,
 				697CF63D1C3D9AC100EC4BF6 /* LaunchScreen.storyboard */,
 				697CF6401C3D9AC100EC4BF6 /* Info.plist */,
 			);
@@ -94,6 +107,27 @@
 				697CF64B1C3D9AC100EC4BF6 /* Info.plist */,
 			);
 			path = AboutMeTests;
+			sourceTree = "<group>";
+		};
+		697CF6541C3D9B4000EC4BF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				697CF6341C3D9AC100EC4BF6 /* AppDelegate.swift */,
+				697CF6361C3D9AC100EC4BF6 /* ViewController.swift */,
+				697CF65B1C3D9EF200EC4BF6 /* AirsoftViewController.swift */,
+				697CF65D1C3D9F3A00EC4BF6 /* MartialArtsViewController.swift */,
+				697CF6601C3D9F9B00EC4BF6 /* SwimmingViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		697CF6551C3D9B6000EC4BF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				697CF6381C3D9AC100EC4BF6 /* Main.storyboard */,
+				697CF63B1C3D9AC100EC4BF6 /* Assets.xcassets */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +214,8 @@
 				697CF63F1C3D9AC100EC4BF6 /* LaunchScreen.storyboard in Resources */,
 				697CF63C1C3D9AC100EC4BF6 /* Assets.xcassets in Resources */,
 				697CF63A1C3D9AC100EC4BF6 /* Main.storyboard in Resources */,
+				697CF6681C3DA80E00EC4BF6 /* LaunchScreen.storyboard in Resources */,
+				697CF6581C3D9BA200EC4BF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +233,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697CF66A1C3DB50F00EC4BF6 /* ViewController.swift in Sources */,
 				697CF6371C3D9AC100EC4BF6 /* ViewController.swift in Sources */,
+				697CF65C1C3D9EF200EC4BF6 /* AirsoftViewController.swift in Sources */,
+				697CF65E1C3D9F3A00EC4BF6 /* MartialArtsViewController.swift in Sources */,
 				697CF6351C3D9AC100EC4BF6 /* AppDelegate.swift in Sources */,
+				697CF6611C3D9F9B00EC4BF6 /* SwimmingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +273,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				697CF63E1C3D9AC100EC4BF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		697CF6561C3D9BA200EC4BF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				697CF6571C3D9BA200EC4BF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		697CF6661C3DA80E00EC4BF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				697CF6671C3DA80E00EC4BF6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
